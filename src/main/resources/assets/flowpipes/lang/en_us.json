@@ -1,0 +1,14 @@
+{
+  "block.flowpipes.item_pipe_wood": "Wooden Item Pipe",
+  "block.flowpipes.item_pipe_iron": "Iron Item Pipe",
+  "block.flowpipes.item_pipe_diamond": "Diamond Item Pipe",
+  "block.flowpipes.fluid_pipe_wood": "Wooden Fluid Pipe",
+  "block.flowpipes.fluid_pipe_iron": "Iron Fluid Pipe",
+  "block.flowpipes.fluid_pipe_diamond": "Diamond Fluid Pipe",
+  "block.flowpipes.pump_wood": "Wooden Pump",
+  "block.flowpipes.pump_iron": "Iron Pump",
+  "block.flowpipes.pump_diamond": "Diamond Pump",
+  "block.flowpipes.sorter_wood": "Wooden Sorter",
+  "block.flowpipes.sorter_iron": "Iron Sorter",
+  "block.flowpipes.sorter_diamond": "Diamond Sorter"
+}

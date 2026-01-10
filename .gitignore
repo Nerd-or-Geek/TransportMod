@@ -1,0 +1,28 @@
+# Gradle
+.gradle/
+build/
+out/
+*.jar
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Minecraft
+run/
+.mixin.out
+
+# Fabric
+*.class
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class

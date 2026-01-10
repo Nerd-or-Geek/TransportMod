@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# #",
+    "PCP",
+    "# #"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:oak_planks"
+    },
+    "P": {
+      "item": "minecraft:iron_bars"
+    },
+    "C": {
+      "item": "minecraft:oak_log"
+    }
+  },
+  "result": {
+    "item": "flowpipes:sorter_wood"
+  }
+}

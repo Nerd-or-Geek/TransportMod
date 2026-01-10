@@ -1,0 +1,44 @@
+/* Placeholder Textures - Replace with actual PNG files
+ * 
+ * Block textures needed (all 16x16 PNG):
+ * 
+ * ITEM PIPES:
+ * - item_pipe_wood.png (brown hollow square)
+ * - item_pipe_iron.png (gray hollow square)
+ * - item_pipe_diamond.png (cyan hollow square)
+ * 
+ * FLUID PIPES:
+ * - fluid_pipe_wood.png (brown with wave pattern)
+ * - fluid_pipe_iron.png (gray with wave pattern)
+ * - fluid_pipe_diamond.png (cyan with wave pattern)
+ * 
+ * PUMPS:
+ * - pump_wood.png (brown block with arrow/gear)
+ * - pump_wood_active.png (brown block with animated gear)
+ * - pump_iron.png (gray block with arrow/gear)
+ * - pump_iron_active.png (gray block with animated gear)
+ * - pump_diamond.png (cyan block with arrow/gear)
+ * - pump_diamond_active.png (cyan block with animated gear)
+ * 
+ * SORTERS:
+ * - sorter_wood.png (brown block with grid)
+ * - sorter_iron.png (gray block with grid)
+ * - sorter_diamond.png (cyan block with grid)
+ * 
+ * ITEM ICONS (can be same as block textures):
+ * - item_pipe_wood.png
+ * - item_pipe_iron.png
+ * - item_pipe_diamond.png
+ * - fluid_pipe_wood.png
+ * - fluid_pipe_iron.png
+ * - fluid_pipe_diamond.png
+ * - pump_wood.png
+ * - pump_iron.png
+ * - pump_diamond.png
+ * - sorter_wood.png
+ * - sorter_iron.png
+ * - sorter_diamond.png
+ * 
+ * GUI TEXTURE:
+ * - sorter_gui.png (176x222 pixel GUI background)
+ */

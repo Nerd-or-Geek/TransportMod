@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "powered=false": {"model": "flowpipes:block/pump_iron"},
+    "powered=true": {"model": "flowpipes:block/pump_iron_active"}
+  }
+}

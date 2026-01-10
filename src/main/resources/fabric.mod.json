@@ -1,0 +1,22 @@
+{
+	"schemaVersion": 1,
+	"id": "flowpipes",
+	"version": "${version}",
+	"name": "FlowPipes",
+	"description": "A gravity-based logistics mod featuring pipes, pumps, and sorters for item and fluid transport.",
+	"authors": ["FlowPipes Dev"],
+	"contact": {},
+	"license": "MIT",
+	"environment": "*",
+	"entrypoints": {
+		"main": ["com.flowpipes.FlowPipesMod"],
+		"client": ["com.flowpipes.client.FlowPipesClient"]
+	},
+	"mixins": [],
+	"depends": {
+		"fabricloader": ">=0.15.0",
+		"minecraft": "1.21.8",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
