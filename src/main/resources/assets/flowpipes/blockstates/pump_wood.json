@@ -1,6 +1,6 @@
 {
-  "variants": {
-    "powered=false": {"model": "flowpipes:block/pump_wood"},
-    "powered=true": {"model": "flowpipes:block/pump_wood_active"}
-  }
+  "multipart": [
+    { "when": { "powered": "false" }, "apply": { "model": "flowpipes:block/pump_wood" } },
+    { "when": { "powered": "true" },  "apply": { "model": "flowpipes:block/pump_wood_active" } }
+  ]
 }

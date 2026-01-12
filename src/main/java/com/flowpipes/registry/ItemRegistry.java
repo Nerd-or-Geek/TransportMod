@@ -34,8 +34,12 @@ public class ItemRegistry {
 
 	private static BlockItem registerBlockItem(String name, net.minecraft.block.Block block) {
 		Identifier id = Identifier.of(FlowPipesMod.MOD_ID, name);
-		// Use custom settings that provides default translation key
-		BlockItem item = new BlockItem(block, new FlowPipesItemSettings());
+		// Use custom settings to provide a translation key during Item construction
+		FlowPipesItemSettings settings = new FlowPipesItemSettings()
+			.setCustomTranslationKey(block.getTranslationKey())
+			// Ensure model id exists during Item construction; points to models/item/<name>.json
+			.setCustomModelId(Identifier.of(FlowPipesMod.MOD_ID, name));
+		BlockItem item = new BlockItem(block, settings);
 		return Registry.register(Registries.ITEM, id, item);
 	}
 }

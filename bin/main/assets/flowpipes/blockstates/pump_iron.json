@@ -1,6 +1,6 @@
 {
-  "variants": {
-    "powered=false": {"model": "flowpipes:block/pump_iron"},
-    "powered=true": {"model": "flowpipes:block/pump_iron_active"}
-  }
+  "multipart": [
+    { "when": { "powered": "false" }, "apply": { "model": "flowpipes:block/pump_iron" } },
+    { "when": { "powered": "true" },  "apply": { "model": "flowpipes:block/pump_iron_active" } }
+  ]
 }
