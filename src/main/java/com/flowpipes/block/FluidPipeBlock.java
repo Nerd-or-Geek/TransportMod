@@ -2,6 +2,7 @@ package com.flowpipes.block;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.MapColor;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.BooleanProperty;
@@ -23,8 +24,9 @@ public class FluidPipeBlock extends Block {
 	private final PipeTier tier;
 	private PipeSize size = PipeSize.SIZE_1X1;
 
-	public FluidPipeBlock(PipeTier tier) {
-		super(Settings.create()
+	public FluidPipeBlock(Settings settings, PipeTier tier) {
+		super(settings
+			.mapColor(MapColor.STONE_GRAY)
 			.strength(1.5f, 6.0f)
 			.nonOpaque());
 		this.tier = tier;

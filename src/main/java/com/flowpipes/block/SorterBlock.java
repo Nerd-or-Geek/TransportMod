@@ -2,6 +2,7 @@ package com.flowpipes.block;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.MapColor;
 import net.minecraft.block.BlockWithEntity;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityTicker;
@@ -29,8 +30,9 @@ public class SorterBlock extends BlockWithEntity {
 
 	private final PipeTier tier;
 
-	public SorterBlock(PipeTier tier) {
-		super(Settings.create()
+	public SorterBlock(Settings settings, PipeTier tier) {
+		super(settings
+			.mapColor(MapColor.STONE_GRAY)
 			.strength(2.0f, 8.0f)
 			.nonOpaque());
 		this.tier = tier;

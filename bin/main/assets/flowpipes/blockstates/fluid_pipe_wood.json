@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "north=false,south=false,east=false,west=false,up=false,down=false": {"model": "flowpipes:block/fluid_pipe_wood"}
+  }
+}

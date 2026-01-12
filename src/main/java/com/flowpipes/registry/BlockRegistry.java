@@ -3,6 +3,8 @@ package com.flowpipes.registry;
 import net.minecraft.block.Block;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 import com.flowpipes.FlowPipesMod;
 import com.flowpipes.block.PipeBlocks;
@@ -17,39 +19,45 @@ public class BlockRegistry {
 	public static void registerBlocks() {
 		// Item Pipes
 		PipeBlocks.ITEM_PIPE_WOOD = registerBlock("item_pipe_wood", 
-			new ItemPipeBlock(PipeTier.WOOD));
+			new ItemPipeBlock(createSettings("item_pipe_wood"), PipeTier.WOOD));
 		PipeBlocks.ITEM_PIPE_IRON = registerBlock("item_pipe_iron", 
-			new ItemPipeBlock(PipeTier.IRON));
+			new ItemPipeBlock(createSettings("item_pipe_iron"), PipeTier.IRON));
 		PipeBlocks.ITEM_PIPE_DIAMOND = registerBlock("item_pipe_diamond", 
-			new ItemPipeBlock(PipeTier.DIAMOND));
+			new ItemPipeBlock(createSettings("item_pipe_diamond"), PipeTier.DIAMOND));
 
 		// Fluid Pipes
 		PipeBlocks.FLUID_PIPE_WOOD = registerBlock("fluid_pipe_wood", 
-			new FluidPipeBlock(PipeTier.WOOD));
+			new FluidPipeBlock(createSettings("fluid_pipe_wood"), PipeTier.WOOD));
 		PipeBlocks.FLUID_PIPE_IRON = registerBlock("fluid_pipe_iron", 
-			new FluidPipeBlock(PipeTier.IRON));
+			new FluidPipeBlock(createSettings("fluid_pipe_iron"), PipeTier.IRON));
 		PipeBlocks.FLUID_PIPE_DIAMOND = registerBlock("fluid_pipe_diamond", 
-			new FluidPipeBlock(PipeTier.DIAMOND));
+			new FluidPipeBlock(createSettings("fluid_pipe_diamond"), PipeTier.DIAMOND));
 
 		// Pumps
 		PipeBlocks.PUMP_WOOD = registerBlock("pump_wood", 
-			new PumpBlock(PipeTier.WOOD));
+			new PumpBlock(createSettings("pump_wood"), PipeTier.WOOD));
 		PipeBlocks.PUMP_IRON = registerBlock("pump_iron", 
-			new PumpBlock(PipeTier.IRON));
+			new PumpBlock(createSettings("pump_iron"), PipeTier.IRON));
 		PipeBlocks.PUMP_DIAMOND = registerBlock("pump_diamond", 
-			new PumpBlock(PipeTier.DIAMOND));
+			new PumpBlock(createSettings("pump_diamond"), PipeTier.DIAMOND));
 
 		// Sorters
 		PipeBlocks.SORTER_WOOD = registerBlock("sorter_wood", 
-			new SorterBlock(PipeTier.WOOD));
+			new SorterBlock(createSettings("sorter_wood"), PipeTier.WOOD));
 		PipeBlocks.SORTER_IRON = registerBlock("sorter_iron", 
-			new SorterBlock(PipeTier.IRON));
+			new SorterBlock(createSettings("sorter_iron"), PipeTier.IRON));
 		PipeBlocks.SORTER_DIAMOND = registerBlock("sorter_diamond", 
-			new SorterBlock(PipeTier.DIAMOND));
+			new SorterBlock(createSettings("sorter_diamond"), PipeTier.DIAMOND));
 	}
 
 	private static Block registerBlock(String name, Block block) {
 		return Registry.register(Registries.BLOCK, 
 			Identifier.of(FlowPipesMod.MOD_ID, name), block);
+	}
+
+	private static Block.Settings createSettings(String name) {
+		Identifier id = Identifier.of(FlowPipesMod.MOD_ID, name);
+		RegistryKey<Block> key = RegistryKey.of(RegistryKeys.BLOCK, id);
+		return Block.Settings.create().registryKey(key);
 	}
 }

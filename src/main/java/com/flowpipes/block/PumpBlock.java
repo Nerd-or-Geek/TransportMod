@@ -2,6 +2,7 @@ package com.flowpipes.block;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.MapColor;
 import net.minecraft.block.BlockWithEntity;
 import net.minecraft.block.entity.BlockEntity;
 import com.mojang.serialization.MapCodec;
@@ -23,8 +24,9 @@ public class PumpBlock extends BlockWithEntity {
 
 	private final PipeTier tier;
 
-	public PumpBlock(PipeTier tier) {
-		super(Settings.create()
+	public PumpBlock(Settings settings, PipeTier tier) {
+		super(settings
+			.mapColor(MapColor.STONE_GRAY)
 			.strength(2.0f, 8.0f)
 			.nonOpaque());
 		this.tier = tier;

@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "powered=false": {"model": "flowpipes:block/pump_diamond"},
+    "powered=true": {"model": "flowpipes:block/pump_diamond_active"}
+  }
+}
